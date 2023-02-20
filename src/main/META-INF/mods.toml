@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="[44,)"
+license="MIT"
+issueTrackerURL="https://github.com/MarcusDamascus/TC5Revitalized/issues"
+logoFile="examplemod.png"
+
+[[mods]]
+modId="thaumcraft5revised"
+version="${file.jarVersion}" #mandatory
+displayName="Thaumcraft 5 Revised"
+#displayURL="Enter CF link when created"
+authors="MarcusDamascus"
+credits="Azanor13, the many Thaumcraft addon creators"
+description="The reenvisioned world of Thaumaturgy, now with more addons!"
+
+# itemIcon="thaumcraft5revised:catalogue_icon" icon for Catalogue's mod list
+# configBackground="thaumcraft5revised:textures/block/greatwood_planks.png" background for Configured's config screen
+
+[[dependencies.thaumcraft5revised]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[44,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.thaumcraft5revised]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.3,1.20)"
+
+[[dependencies.thaumcraft5revised]]
+modId="curios"
+mandatory=true
+versionRange="[1.19.2-5.1.2.2,)"
+
